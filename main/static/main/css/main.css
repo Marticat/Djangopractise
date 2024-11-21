@@ -1,0 +1,65 @@
+body {
+    background: #c9c9c9;
+}
+aside {
+    float: left;
+    background: #313131;
+    width: 20%;
+    padding: 2.5%;
+    min-height: 100vh; /* Адаптивная высота */
+    color: #ffffff;
+    border-right: 5px solid #858585;
+}
+aside img {
+    width: 80px;
+    float: left;
+}
+aside .logo {
+    font-size: 40px; /* Убрали пробел */
+    margin-left: 10px; /* Убрали пробел */
+    font-weight: bold;
+    position: relative;
+    top: -5px;
+}
+
+aside h3 {
+    margin-top: 50px; /* Убрали пробел */
+    font-size: 28px;
+}
+aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+aside ul li {
+    color: #fff;
+    display: block;
+    margin-top: 20px; /* Убрали пробел */
+    transition: transform .6s ease;
+}
+
+aside ul li a {
+    color: inherit; /* Наследуем цвет */
+    text-decoration: none; /* Убираем подчеркивание */
+    display: flex; /* Для выравнивания иконки и текста */
+    align-items: center;
+}
+
+aside ul li a i {
+    margin-right: 10px; /* Отступ для иконки */
+}
+
+aside ul li:hover, aside ul li a:hover {
+    color: #eb5959;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+main .features {
+    float: left;
+    color: #000000;
+    margin-top: 100px;
+    text-align: center;
+    width: 75%;
+}
+main .features h1 {font-size: 50px;}
+main .features p {max-width: 400px; margin: 20px auto;}
