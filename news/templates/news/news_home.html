@@ -3,7 +3,17 @@
 {% block content %}
     <div class="features">
         <h1>News</h1>
-        <p>Our website is website,stfu</p>
-        <button class="btn btn-warning">To the website about us<</button>
+        {% if news %}
+        {% for el in news %}
+            <div class="alert alert-warning">
+                <h3>{{ el.title }}</h3>
+                <p>{{ el.anons }}</p>
+            </div>
+        {% endfor %}
+        {% else %}
+            <p>NO NEWS YET</p>
+        {% endif %}
+
+        {# comments looks like that #}
     </div>
 {% endblock %}
